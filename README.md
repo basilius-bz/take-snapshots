@@ -28,7 +28,7 @@ Contributions are welcome! Please open an issue or submit a pull request for any
 
 ## Installation
 
-1. Ensure `ffmpeg` and `ffprobe` are installed. You can install them using your package manager. For example, on Ubuntu:
+1. Ensure `ffmpeg` and `ffprobe` are installed. You can install them using your package manager. For example, on deb systems:
 
    ```bash
    sudo apt update
@@ -38,7 +38,7 @@ Contributions are welcome! Please open an issue or submit a pull request for any
 2. Download the script using curl:
 
    ```bash
-   curl -o take_snapshots.sh https://raw.githubusercontent.com/yourusername/take_snapshots/main/take_snapshots.sh
+   curl -o take_snapshots.sh https://raw.githubusercontent.com/basilius-bz/take-snapshots/main/take_snapshots.sh
    chmod +x take_snapshots.sh
    ```
 
@@ -56,7 +56,7 @@ Contributions are welcome! Please open an issue or submit a pull request for any
 - `-f, --force-format`      Force specific color format (bt709, bt601, bt2020)
 - `-r, --remove-pixfmt`     Remove `-pix_fmt rgb24` to allow 16bit PNG
 - `-d, --directory`         Directory to save snapshots (Default: Current directory)
-- `-p, --prefix`            Prefix for snapshot filenames
+- `-p, --prefix`            Prefix for snapshot filenames (default: snapshots)
 - `--debug`                 Enable debug mode to show detailed command outputs
 
 ### Example
